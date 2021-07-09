@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+h2.AdDesigner {
+    font-family: 'Caveat', cursive;
+    color: #0e3c7e;
+    margin-top: 20px;
+    font-size: 1.75rem;
+}
