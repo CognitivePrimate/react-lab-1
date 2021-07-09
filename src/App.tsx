@@ -6,7 +6,7 @@ import AdDesigner from "./AdDesigner";
 function App() {
   return (
     <div className="App">
-        <Header headerText="Chonky Cats' Ice Cream Emporium"/>
+        <Header headerText="Chonky Cats' Ice Cream" user="Chirpus"/>
         <AdDesigner/>
 
 
