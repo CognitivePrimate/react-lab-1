@@ -31,7 +31,7 @@ function AdDesigner(){
             <div className="SupportButtonsContainer">
                 <button className="SupportButtons" onClick={() => {setFlavor("Tuna")}}>Tuna</button>
                 <button className="SupportButtons" onClick={() => {setFlavor("Cheese")}}>Cheese</button>
-                <button className="SupportButtons" onClick={() => {setFlavor("Chicken")}}>Chicken</button>
+                <button className="SupportButtons" onClick={() => {setFlavor("Catnip")}}>Catnip</button>
             </div>
 
             <h3 className="ColorTheme">Color Theme</h3>
