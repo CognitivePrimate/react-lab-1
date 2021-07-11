@@ -2,7 +2,6 @@ import "./adDesigner.css";
 import {useState} from "react";
 
 interface Props {
-    flavor: string;
     fontSize: number;
     darkTheme: boolean;
 }
