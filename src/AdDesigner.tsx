@@ -1,10 +1,10 @@
 import "./adDesigner.css";
 import {useState} from "react";
 
-interface Props {
-    fontSize: number;
-    darkTheme: boolean;
-}
+// interface Props {
+//     fontSize: number;
+//     darkTheme: boolean;
+// }
 
 function AdDesigner(){
 

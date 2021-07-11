@@ -9,7 +9,7 @@ function App() {
     <div className="App">
         <Header headerText="Chonky Cats' Ice Cream" user="Chirpus"/>
         <AdDesigner/>
-        <Votes numberOfVotes={0} selected={false}/>
+        <Votes/>
 
 
     </div>
