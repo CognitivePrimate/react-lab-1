@@ -1,19 +1,18 @@
 import {useState} from "react";
 import "./votes-styles.css";
 
-interface Props {
-    // selected: boolean;
-    // numberOfVotes: number;
-    // percent: number;
+interface Flavor {
+    name: string;
+    numberOfVotes: number;
+    percent: number
 }
-
 // let TunaVotes: number = 0;
 // let voteGrower = ({width, selected}: Props)  => {
 //     let grow = selected ? {style: {width: +1}}
 // } 
 
 
-function Votes() {
+function Votes({name, numberOfVotes, percent }: Flavor) {
     const[width, setWidth] = useState(0);
     const[flavor, setFlavor] = useState("Tuna");
     const[selected, setSelected] = useState(false);
@@ -37,19 +36,29 @@ function Votes() {
     // TODO END
     // NOTES
     // allTheThings calls percent, which gets passed numberofVotes for specific flavor
+    // --use interface for flavor? flavor.name, flavor.votes?
     // NOTES END
     // create conditional function for flavor votes
     let TotalVotes: number = 0;
-    let NumberOfVotes: number = 0;
-    let TunaVotes: number = 0;
-    let CheeseVotes: number = 0;
-    let CatnipVotes: number = 0;
+    // let NumberOfVotes: number = 0;
+    // let TunaVotes: number = 0;
+    // let CheeseVotes: number = 0;
+    // let CatnipVotes: number = 0;
     let Percent = 0;
+
+    let flavors: Flavor[] = [
+        {name: "Tuna", numberOfVotes: 0, percent: 0},
+        {name: "Cheese", numberOfVotes: 0, percent: 0},
+        {name: "Catnip", numberOfVotes: 0, percent: 0}
+    ]
 
     const AllTheThings = (): any => {
         TotalVotes++;
         // increase votes base on flavor
-        flavor === "Tuna" ? TunaVotes = NumberOfVotes : flavor === "Cheese" ? NumberOfVotes = CheeseVotes : NumberOfVotes = CatnipVotes;
+        // name === "Tuna" ? TunaVotes = NumberOfVotes : flavor === "Cheese" ? NumberOfVotes = CheeseVotes : NumberOfVotes = CatnipVotes;
+        let FlavorVotedFor: Flavor|undefined = flavors.find((flavor) => {
+            return flavor.name === 
+        })
         NumberOfVotes++;
         console.log(`TotalVotes: ${TotalVotes}`);
         console.log(`NumberOfVotes: ${NumberOfVotes}`);
